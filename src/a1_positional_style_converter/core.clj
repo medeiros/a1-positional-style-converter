@@ -6,17 +6,8 @@
   [& args]
   (println "Hello, World!"))
 
-(def domain "ABCDEFGHIJKLMNOPQRSTUVWXYZ")
-
 (defn convert-a1-to-positional
   "Convert an A1 core to a positional value starting at 0."
-  [a1code]
-  (loop [i 0
-         j (dec (count a1code))
-         result 0]
-    (if (< i count (a1code))
-      (recur (inc i) (dec j)
-             (+ result (reduce * (repeat j (count domain)))))
-      (do
-        (println (str "result: " result))
-        result))))
+  [c1code]
+  (reduce #(* % (* 26 ?))
+          (map #(- (int (.charAt c1code %)) 65) (range 0 (count c1code)))))
