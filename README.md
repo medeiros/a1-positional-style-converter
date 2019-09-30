@@ -11,6 +11,9 @@ For instance:
 
 - A is equivalent to position 0
 - K is equivalent to position 10
+- AA is equivalent to position 26
+
+Useful when working between Excel/CSV and Java positional referencing.
 
 ## Installation
 
