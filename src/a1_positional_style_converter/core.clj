@@ -2,7 +2,7 @@
   (:gen-class))
 
 (defn convert-a1-to-positional
-  "Convert an A1 code to a positional value starting at 0."
+  "Converts an A1 code to a positional value starting at 0."
   [c1code]
   (dec (reduce +
                (map #(int (* %1 (Math/pow 26 %2)))
@@ -10,6 +10,7 @@
                     (into [] (reverse (range 0 (count c1code))))))))
 
 (defn convert-positional-to-a1
+  "Converts a positional value (starting at zero) to an A1 code."
   [pos]
   (loop [x pos
          l []]
