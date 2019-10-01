@@ -12,6 +12,7 @@ For instance:
 - A is equivalent to position 0
 - K is equivalent to position 10
 - AA is equivalent to position 26
+- AZ is equivalent to position 51
 
 Useful when working between Excel/CSV and Java positional referencing.
 
@@ -23,18 +24,16 @@ $ lein -uberjar
 
 $ java -jar a1-positional-style-converter-0.1.0-standalone.jar [args]
 
-- arg0: <c1 value | positional value>
-- arg1: <to-pos|to-ci>
+- arg0: <pos|a1>
+- arg1: <pos value|a1 value>
 
 ## Examples
 
-$ java -jar a1-positional-style-converter-0.1.0-standalone.jar C to-pos
+$ java -jar a1-positional-style-converter-0.1.0-standalone.jar a1 C
 returns 2
 
-$ java -jar a1-positional-style-converter-0.1.0-standalone.jar 10 to-c1
+$ java -jar a1-positional-style-converter-0.1.0-standalone.jar pos 10
 returns K
-
-### Improvements
 
 ## License
 
