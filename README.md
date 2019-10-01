@@ -9,10 +9,17 @@ columns) and positional (starting at zero) style.
 
 For instance:
 
-- A is equivalent to position 0
-- K is equivalent to position 10
-- AA is equivalent to position 26
-- AZ is equivalent to position 51
+- "A" is equivalent to position 0
+- "K" is equivalent to position 10
+- "AA" is equivalent to position 26
+- "AZ" is equivalent to position 51
+
+The other direction is also covered:
+
+- 25 is equivalent to code "Z"
+- 9 is equivalent to code "J"
+- 703 is equivalent to code "AAB"
+- 27 is equivalent to code "AB"
 
 Useful when working between Excel/CSV and Java positional referencing.
 
@@ -30,9 +37,11 @@ $ java -jar a1-positional-style-converter-0.1.0-standalone.jar [args]
 ## Examples
 
 $ java -jar a1-positional-style-converter-0.1.0-standalone.jar a1 C
+
 returns 2
 
 $ java -jar a1-positional-style-converter-0.1.0-standalone.jar pos 10
+
 returns K
 
 ## License
