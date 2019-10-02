@@ -9,38 +9,42 @@ columns) and positional (starting at zero) style.
 
 For instance:
 
-- "A" is equivalent to position 0
-- "K" is equivalent to position 10
-- "AA" is equivalent to position 26
-- "AZ" is equivalent to position 51
+|A1 ref|Is equivalent to position|
+|---|---|
+|A|0|
+|K|10|
+|AA|26|
+|AZ|51|
 
 The other direction is also covered:
 
-- 25 is equivalent to code "Z"
-- 9 is equivalent to code "J"
-- 703 is equivalent to code "AAB"
-- 27 is equivalent to code "AB"
+|Position|Is equivalent to A1 ref|
+|---|---|
+|25|Z|
+|9|J|
+|703|AAB|
+|27|AB|
 
 Useful when working between Excel/CSV and Java positional referencing.
 
 ## Installation
 
-$ lein -uberjar
+    $ lein -uberjar
 
 ## Usage
 
-$ java -jar a1-positional-style-converter-0.1.0-standalone.jar [args]
+    $ java -jar a1-positional-style-converter-0.1.0-standalone.jar [args]
 
 - arg0: <pos|a1>
 - arg1: <pos value|a1 value>
 
 ## Examples
 
-$ java -jar a1-positional-style-converter-0.1.0-standalone.jar a1 C
+    $ java -jar a1-positional-style-converter-0.1.0-standalone.jar a1 C
 
 returns 2
 
-$ java -jar a1-positional-style-converter-0.1.0-standalone.jar pos 10
+    $ java -jar a1-positional-style-converter-0.1.0-standalone.jar pos 10
 
 returns K
 
