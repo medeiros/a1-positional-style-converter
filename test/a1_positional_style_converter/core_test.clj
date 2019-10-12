@@ -3,7 +3,7 @@
             [a1-positional-style-converter.core :refer :all]))
 
 (deftest should-convert-a1-to-positional
-  (testing "FIXME, I fail."
+  (testing "FAIL: should-convert-a1-to-positional"
     (is (= (convert-a1-to-positional "A") 0))
     (is (= (convert-a1-to-positional "AA") 26))
     (is (= (convert-a1-to-positional "E") 4))
@@ -15,7 +15,7 @@
     (is (= (convert-a1-to-positional "AAB") 703)))
 
 (deftest should-convert-positional-to-a1
-  (testing "FIXME, I fail."
+  (testing "FAIL: should-convert-positional-to-a1"
     (is (= (convert-positional-to-a1 0) "A"))
     (is (= (convert-positional-to-a1 26) "AA"))
     (is (= (convert-positional-to-a1 4) "E"))
